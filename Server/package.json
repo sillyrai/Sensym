@@ -11,7 +11,7 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "start": "npx tsx index.ts",
+    "start": "ts-node index.ts",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:sass\"",
     "dev:server": "nodemon index.ts",
     "dev:sass": "sass --watch Sass:public/css"
