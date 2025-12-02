@@ -5,8 +5,11 @@ dotenv.config({path: ".env", quiet: true});
 
 let app = express();
 
+app.use(express.static("public"))
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.render('index', {});
 })
 
 app.listen(process.env.PORT, () => {

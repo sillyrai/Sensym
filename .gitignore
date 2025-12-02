@@ -40,3 +40,6 @@ logs/
 coverage/
 temp/
 tmp/
+
+# --- Unnecassery stuff ---
+Server/public/css/*
